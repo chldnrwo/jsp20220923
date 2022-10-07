@@ -13,4 +13,45 @@
   <session-config>
   	<session-timeout>60</session-timeout>
   </session-config>
+
+
+ <!--서블릿 설정  -->
+ <servlet>
+ 	<servlet-name>servlet06</servlet-name>
+ 	<servlet-class>servlet.chap17.Servlet06</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ 	<servlet-name>servlet06</servlet-name>
+ 	<url-pattern>/servlet6</url-pattern>
+ </servlet-mapping>
+
+
+ <servlet>
+ 	<servlet-name>servlet07</servlet-name>
+ 	<servlet-class>servlet.chap17.Servlet07</servlet-class>
+ 	<!-- 서블릿이 처음 만들어질 때 필요한 내용들 작성 -->
+ 	<init-param>
+ 		<param-name>pw</param-name>
+ 		<param-value>1q2w3e</param-value>
+ 	</init-param>
+ 	<init-param>
+ 		<param-name>ip</param-name>
+ 		<param-value>2.255.1.99</param-value>
+ 	</init-param>
+ 	<init-param>
+ 		<param-name>userName</param-name>
+ 		<param-value>DD</param-value>
+ 	</init-param>
+ </servlet>
+ 
+ <servlet-mapping>
+ 	<servlet-name>servlet07</servlet-name>
+ 	<url-pattern>/servlet7</url-pattern>
+ </servlet-mapping>
+ 
 </web-app>
+
+
+
+
