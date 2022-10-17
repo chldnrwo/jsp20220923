@@ -2,3 +2,4 @@
 .project
 /.settings/
 *.jar
+src/main/webapp/WEB-INF/props/jdbc.properties
