@@ -1,4 +1,4 @@
-package servlet.chap14;
+package servlet.chap17;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -18,14 +18,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Servlet15
  */
-@WebServlet("/Servlet15")
-public class Servlet15 extends HttpServlet {
+@WebServlet("/Servlet34")
+public class Servlet34 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Servlet15() {
+    public Servlet34() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -39,8 +39,7 @@ public class Servlet15 extends HttpServlet {
 		// 2. 데이터베이스 커넥션 구하기
 		ServletContext application = request.getServletContext();
 		
-		//String url = application.getAttribute("jdbc.url").toString();
-		String url = request.getServletContext().getAttribute("jdbc.url").toString();
+		String url = application.getAttribute("jdbc.url").toString();
 		String user = application.getAttribute("jdbc.username").toString();
 		String pw = application.getAttribute("jdbc.password").toString();
 		
